@@ -931,12 +931,12 @@ function rules() {
         {
             type: "field",
             inboundTag: ["tproxy_tcp_inbound", "dns_conf_inbound", "socks_inbound", "https_inbound", "http_inbound"],
-            outboundTag: "tcp_outbound"
+            outboundTag: "direct"
         },
         {
             type: "field",
             inboundTag: ["tproxy_udp_inbound"],
-            outboundTag: "udp_outbound"
+            outboundTag: "direct"
         },
         {
             type: "field",
